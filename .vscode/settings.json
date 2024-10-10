@@ -19,5 +19,18 @@
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "workbench.colorCustomizations": {
+    "editorInfo.foreground": "#00000000",
+    "editorOverviewRuler.addedForeground": "#0000",
+    "editorOverviewRuler.deletedForeground": "#00000000",
+    "editorOverviewRuler.errorForeground": "#00000000",
+    "editorOverviewRuler.infoForeground": "#00000000",
+    "editorOverviewRuler.modifiedForeground": "#00000000",
+    "editorOverviewRuler.warningForeground": "#00000000",
+    "scm.historyGraph.historyItemGroupLocal": "#3C8ED5",
+    "scmGraph.historyItemGroupLocal": "#3C8ED5",
+    "minimap.background": "#00000000",
+    "scrollbar.shadow": "#00000000"
+  }
 }
