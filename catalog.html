@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона / Каталог</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">
+          <img src="#" alt="" title="" />
+        </div>
+        <nav class="header_nav">
+          <a href="#" title="Главная">Главная</a>
+          <a href="#" title="О Седоне">О Седоне</a>
+          <a href="catalog.html" title="Гостиницы">Гостиницы</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <button class="header_search-button"></button>
+        <button class="header_like-button"></button>
+        <button class="header_action-button">Хочу сюда!</button>
+      </div>
+    </header>
+    <main>
+      <div class="catalog-main">
+        <nav class="catalog-nav">
+          <a href="index.html" title="На главную">На главную</a> &gt;
+          <a href="catalog.html" title="Гостиницы">Гостиницы</a>
+        </nav>
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <form class="filter">
+          <div class="filter-infrastructure">
+            <p class="filter-infrastructure-title">Инфраструктура:</p>
+            <input type="checkbox" id="filter-pool" checked />
+            <label class="filter-variant" for="filter-pool">Бассейн</label>
+            <input type="checkbox" id="filter-parking" />
+            <label class="filter-variant" for="filter-parking">Парковка</label>
+            <input type="checkbox" id="filter-wifi" />
+            <label class="filter-variant" for="filter-wifi">wi-fi</label>
+          </div>
+          <div class="filter-housing">
+            <p class="filter-housing-title">Тип жилья:</p>
+            <input type="radio" id="filter-hotel" name="housing-type" checked />
+            <label class="filter-variant" for="filter-hotel">Гостиница</label>
+            <input type="radio" id="filter-motel" name="housing-type" />
+            <label class="filter-variant" for="filter-motel">Мотель</label>
+            <input type="radio" id="filter-apartment" name="housing-type" />
+            <label class="filter-variant" for="filter-apartment"
+              >Апартаменты</label
+            >
+          </div>
+          <div class="filter-price">
+            <p class="filter-price-title">Стоимость, &#x20BD;:</p>
+            <div class="filter-price-controll">
+              <div class="filter-price-boundaries">
+                <input type="text" value="0" required />
+                <input type="text" value="30000" required />
+              </div>
+              <div class="filter-price-scale">
+                <div class="filter-scale-toggle filter-min-toggle"></div>
+                <div class="filter-scale-toggle filter-max-toggle"></div>
+              </div>
+            </div>
+            <button class="filter-button" type="submit">Применить</button>
+            <button class="filter-button filter-reset" type="button">
+              Сбросить
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="catalog-content">
+        <div class="catalog-content-header">
+          <p class="catalog-content-title">Найдено гостиниц: 38</p>
+          <div class="catalog-content-sorting">
+            <select class="catalog-content-sorting-dropdown">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
+          <div class="catalog-content-view">
+            <button class="catalog-content-view-button" id="grid" type="button">
+              <span class="visually-hidden">Сетка</span>
+            </button>
+            <button class="catalog-content-view-button" id="row" type="button">
+              <span class="visually-hidden">По ширине</span>
+            </button>
+            <button class="catalog-content-view-button" id="list" type="button">
+              <span class="visually-hidden">Списком</span>
+            </button>
+          </div>
+        </div>
+        <div class="catalog-result-grid">
+          <section class="catalog-result-grid-item">
+            <img src="#" alt="" title="" />
+            <p class="section-title">Amara Resort &amp; Spa</p>
+            <div class="result-about">
+              <p class="result-type">Гостиница</p>
+              <p class="result-price">От 4000 &#x20BD;</p>
+              <div class="result-button-grid">
+                <a href="#" title="">Подробнее</a
+                ><button class="add-favourite">В избранное</button>
+                <div class="house-star">4 звезды</div>
+                <p class="house-rating">Рейтинг 8,5</p>
+              </div>
+            </div>
+          </section>
+          <section class="catalog-result-grid-item">
+            <img src="#" alt="" title="" />
+            <p class="section-title">Villas at Poco Diablo</p>
+            <div class="result-about">
+              <p class="result-type">Гостиница</p>
+              <p class="result-price">От 5000 &#x20BD;</p>
+              <div class="result-button-grid">
+                <a href="#" title="">Подробнее</a
+                ><button class="add-favourite">В избранное</button>
+                <div class="house-star">4 звезды</div>
+                <p class="house-rating">Рейтинг 9,2</p>
+              </div>
+            </div>
+          </section>
+          <section class="catalog-result-grid-item">
+            <img src="#" alt="" title="" />
+            <p class="section-title">Desert Quail Inn</p>
+            <div class="result-about">
+              <p class="result-type">Гостиница</p>
+              <p class="result-price">От 2500 &#x20BD;</p>
+              <div class="result-button-grid">
+                <a href="#" title="">Подробнее</a
+                ><button class="add-favourite">В избранное</button>
+                <div class="house-star">3 звезды</div>
+                <p class="house-rating">Рейтинг 6,9</p>
+              </div>
+            </div>
+          </section>
+          <section class="catalog-result-grid-item">
+            <img src="#" alt="" title="" />
+            <p class="section-title">GreenTee Inn</p>
+            <div class="result-about">
+              <p class="result-type">Гостиница</p>
+              <p class="result-price">От 1500 &#x20BD;</p>
+              <div class="result-button-grid">
+                <a href="#" title="">Подробнее</a
+                ><button class="add-favourite">В избранное</button>
+                <div class="house-star">2 звезды</div>
+                <p class="house-rating">Рейтинг 5,0</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="pagination">
+          <button class="pagination-button" type="button">1</button>
+          <button class="pagination-button" type="button">2</button>
+          <button class="pagination-button" type="button">3</button>
+          <button class="pagination-button" type="button">4</button>
+          <div>...</div>
+          <button class="pagination-button" type="button">10</button>
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="subscribe-title">Подпишитесь на рассылку</div>
+        <p class="subscribe-info">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form>
+          <input type="text" class="subscribe-input" placeholder="Ваш e-mail" />
+          <button type="submit" class="subscribe-button">Подписаться</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="https://vk.com/htmlacademy" title="ВКонтакте">ВКонтакте</a
+        ><a href="https://t.me/htmlacademy" title="Telegram">Telegram</a
+        ><a href="https://www.youtube.com/user/htmlacademyru" title="YouTube"
+          >YouTube</a
+        >
+      </div>
+      <div class="footer-center">
+        <a href="tel:+78128121212" title="Позвонить нам">+7 (812) 812-12-12</a>
+      </div>
+      <div class="footer-right">
+        <a
+          href="https://htmlacademy.ru"
+          title="Сайт HTMLAcademy"
+          class="htmlacademy-logo"
+          >Логотип HTMLAcademy</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
