@@ -1,0 +1,14 @@
+{
+  "name": "sedona",
+  "version": "1.0.0",
+  "description": "* Студент: [Мишер](https://up.htmlacademy.ru/univer-html1/2/user/2579801). * Наставник: `Неизвестно`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
