@@ -1106,3 +1106,115 @@ body {
     margin-bottom: 17px;
   }
 }
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+}
+
+.control-input {
+  border: none;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: inherit;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.control-mark-checkbox {
+  border-radius: 4px;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.control-price {
+  position: relative;
+}
+
+.control-price .control-input {
+  padding: 0;
+  padding-right: 50px;
+  padding-left: 20px;
+  width: 143px;
+  height: 48px;
+}
+
+.control-range {
+  position: relative;
+  margin: 8px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 4px;
+}
+
+.control-range-bar {
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  width: 226px;
+  height: 4px;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input-label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  color: #000000;
+  line-height: 24px;
+}
+
+.control-input.left-control-field {
+  margin-right: 2px;
+  border-radius: 4px 0 0 4px;
+}
+
+.control-input.right-control-field {
+  border-radius: 0 4px 4px 0;
+}
+
+.control-input:focus-visible+.control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:checked+.control-mark-checkbox::after {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../images/checkbox.svg");
+  width: 12px;
+  height: 10px;
+  content: "";
+}
+
+.control-input[type="radio"]:checked+.control-mark-radio::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  background-color: #3f5e72;
+  width: 10px;
+  height: 10px;
+  content: "";
+}
